@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.sass';
+import React from 'react';
+// ---------------- COMPONENTS IMPORT ----------------
+import Header from './components/Header/Header';
+import SideNav from './components/SideNav/SideNav';
+import Content from './components/Content/Content';
+import TextBox from './components/TextBox/Textbox';
 
 function App() {
+  // --------------------------- DATA ------------------------
+
+  // -------------------------- DISPLAY ----------------------
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <SideNav />
+      <Content />
+      <TextBox />
     </div>
   );
 }
