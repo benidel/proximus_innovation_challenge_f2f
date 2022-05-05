@@ -23,10 +23,9 @@ function Message(){
           
           <div class="row message-body">
             <div class="col-sm-12 message-main-receiver">
-              <div class="receiver">
+              <div class="receiver px-3">
                 <div class="message-text">
-                 Hi, what are you doing?!
-                </div>
+                 hey, plop, what's up</div>
                 <span class="message-time pull-right">
                   Sun
                 </span>
