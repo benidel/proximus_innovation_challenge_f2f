@@ -484,13 +484,17 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+  body {
+    background: url("./../public/img/bg.png") no-repeat fixed center;
+    background-size: cover;
+  }
   .app {
     top: 0;
     height: 100%;
   }
   .heading {
     height: 70px;
-    background-color: #009688;
+    background: linear-gradient(180deg, rgba(92,22,136,1) 0%, rgba(171,36,144,1) 100%);
   }
   .fa-2x {
     font-size: 2.3em !important;
