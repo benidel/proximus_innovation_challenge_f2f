@@ -18,7 +18,7 @@ function TextBox(){
             <textarea class="form-control" placeholder="Type a message" rows="1" id="comment"></textarea>
           </div>
           <div class="col-sm-1 col-xs-1 reply-recording">
-            <i class="fa fa-microphone fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-microphone fa-1x" aria-hidden="true"></i>
             
           </div>
           <div class="col-sm-1 col-xs-1 reply-send">
