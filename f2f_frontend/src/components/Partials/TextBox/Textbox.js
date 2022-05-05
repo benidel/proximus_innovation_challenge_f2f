@@ -21,7 +21,7 @@ function TextBox(){
             <i class="fa fa-microphone fa-2x" aria-hidden="true"></i>
           </div>
           <div class="col-sm-1 col-xs-1 reply-send">
-            <i class="fa fa-send fa-2x" aria-hidden="true"></i>
+          <i class="fa-solid fa-share fa-2x"></i>
           </div>
         </div>
     );
