@@ -15,7 +15,7 @@ function Header(){
       <div class="row heading">
         <div class="col-sm-2 col-md-1 col-xs-3 heading-avatar">
           <div class="heading-avatar-icon">
-            <img src="./img/BOT.png" class='img-fluid'/>
+            <img src="./img/BOT.png" class='img-fluid' alt='logo'/>
           </div>
         </div>
         <div class="col-sm-8 col-xs-7 heading-name">
