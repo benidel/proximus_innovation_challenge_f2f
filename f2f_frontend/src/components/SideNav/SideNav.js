@@ -10,8 +10,7 @@ function SideNav() {
 
     // ----------------------------- VIEW ---------------------------
     return (
-        <div className="mx-auto my-auto">
-            {/* <!-- SIDEBAR --> */}
+        
             <div class="col-sm-4 side">
                 <div class="side-one">
                     {/* <!-- SIDEBAR ENTETE --> */}
@@ -412,7 +411,6 @@ function SideNav() {
                     </div>
                 </div>
             </div>
-        </div>
     );
 }
 

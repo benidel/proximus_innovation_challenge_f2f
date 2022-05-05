@@ -24,7 +24,9 @@ function App() {
   // -------------------------- DISPLAY ----------------------
   return (
     <div className="App">
+      <div className="banner"></div>
       <div class="container app">
+        
         <div class="row app-one">
           <SideNav />
           <Content />

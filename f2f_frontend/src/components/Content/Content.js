@@ -9,13 +9,11 @@ function Content(){
 
     //-------------------------- DISPLAY -------------------------
     return(
-        <div>
             <div class="col-sm-8 conversation">
                 <Header />
                 <Message />
                 <TextBox />
             </div>
-        </div>
     );
 }
 
