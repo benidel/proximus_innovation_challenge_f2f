@@ -43,16 +43,19 @@ body {
   height: calc(100% - 38px);
   margin: auto;
   padding: 0;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .06), 0 2px 5px 0 rgba(0, 0, 0, .2);
 }
 
 .app-one {
-  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 30px;
   height: 100%;
   overflow: hidden;
   margin: 0;
-  padding: 0;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .06), 0 2px 5px 0 rgba(0, 0, 0, .2);
+  padding: 30px;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, .06), 0px 2px 5px 0 rgba(0, 0, 0, .2);
 }
 
 .side {
@@ -320,11 +323,9 @@ body {
 /*Conversation*/
 
 .conversation {
-  padding: 0 !important;
+  padding: 2% !important;
   margin: 0 !important;
-  height: 100%;
-  /*width: 100%;*/
-  border-left: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 30px;
   /*overflow-y: auto;*/
 }
 
@@ -409,7 +410,6 @@ body {
   border-radius: 10px 10px 0 10px;
   padding: 4px 10px 7px !important;
   font-size: 12px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
   display: inline-block;
   word-wrap: break-word;
 }
@@ -563,8 +563,8 @@ body {
   .conversation {
     padding: 0 !important;
     margin: 0 !important;
-    height: 100%;
-    /*width: 100%;*/
+    height: 95%;
+    width: 90%;
     border-left: 1px solid rgba(0, 0, 0, .08);
     /*overflow-y: auto;*/
   }
