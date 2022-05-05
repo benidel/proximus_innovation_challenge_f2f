@@ -1,16 +1,20 @@
 import './Content.sass';
+import Header from '../Partials/Header/Header';
+import Message from '../Partials/Message/Message';
+import TextBox from '../Partials/TextBox/Textbox';
 
 function Content(){
-    // --------------------------- VARIABLES ------------------------
-
-
+    
     // --------------------------- FUNCTIONS ------------------------
 
-
-    // ----------------------------- VIEW ---------------------------
+    //-------------------------- DISPLAY -------------------------
     return(
-        <div className="mx-auto my-auto" id="Content">
-            <h1 className='text-danger'>Content</h1>
+        <div>
+            <div class="col-sm-8 conversation">
+                <Header />
+                <Message />
+                <TextBox />
+            </div>
         </div>
     );
 }
