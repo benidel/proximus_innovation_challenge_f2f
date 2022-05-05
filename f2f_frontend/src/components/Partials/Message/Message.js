@@ -23,7 +23,7 @@ function Message(){
           
           <div class="row message-body">
             <div class="col-sm-12 message-main-receiver">
-              <div class="receiver px-3">
+              <div class="receiver">
                 <div class="message-text">
                  hey, plop, what's up</div>
                 <span class="message-time pull-right">
