@@ -68,10 +68,42 @@
     border-radius: 10px
     overflow: visible
     ul
+        position: relative
         display: flex
         justify-content: center
         align-items: center
         width: 350px
+        .indicator
+            position: absolute
+            top: -20px
+            right: 0px
+            width: 70px
+            height: 70px
+            background: #E2296D
+            border-radius: 50%
+            border: 8px solid #eee
+            transition: 0.5s
+        .indicator-right
+            position: absolute
+            top: 0%
+            right: 86px
+            width: 30px
+            height: 30px
+            background: white
+            border-top-right-radius: 20px
+            box-shadow: 8px -10px 0 0 #eee
+            transition: 0.5s
+        .indicator-left
+            position: absolute
+            top: 0%
+            left: 293px
+            width: 30px
+            height: 30px
+            background: white
+            border-top-left-radius: 20px
+            box-shadow: -8px -10px 0 0 #eee
+            transition: 0.5s
+
         li
             position: relative
             display: flex
@@ -81,14 +113,8 @@
             height: 70px
             width: 70%
             z-index: 1
-            &:nth-child(1)
-                &:hover
-                    transform: translateX(calc(70px * 0))
-            &:nth-child(2) .active .indicator
-                transform: translateX(calc(70px * 1))
-            &:nth-child(3) .active .indicator
-                transform: translateX(calc(70px * 2))
             a 
+                pointer-events: none
                 position: relative
                 display: flex
                 flex-direction: column
@@ -98,7 +124,7 @@
                 width: 100%
                 font-weight: 500
                 .icon
-                    top: -40px
+                    top: -30px
                     position: relative
                     display: block
                     line-height: 75px
@@ -106,9 +132,9 @@
                     text-align: center
                     transition: 0.5s
                     color: #DDD
-                    &:hover
-                        transform: translateY(-15px)
+                    pointer-events: none
                 .text
+                    pointer-events: none
                     position: absolute
                     top: 60%
                     color: #000
@@ -116,28 +142,7 @@
                     font-size: 1em
                     letter-spacing: 0.05em
                     transition: 0.5s
-                    opacity: 1
-                    // transform: translateY(20px)
-        .indicator
-            position: absolute
-            top: -20px
-            width: 70px
-            height: 70px
-            background-color: #E2296D
-            border-radius: 50%
-            border: 8px solid #eee
-            transition: 0.5s
-            &:hover
-                transform: translateY(-15px)
-            &:before
-                content: ''
-                position: absolute
-                top: 50%
-                left: -20px
-                width: 20px
-                height: 20px
-                border-top-right-radius: 20px
-                background: transparent
+                    opacity: 1           
 
 .copyright
     opacity: 0.3

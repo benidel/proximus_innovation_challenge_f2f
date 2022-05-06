@@ -7,7 +7,6 @@ function SideNav() {
 
     // --------------------------- FUNCTIONS ------------------------
 
-
     // ----------------------------- VIEW ---------------------------
     return (
             <div class="col-sm-4 side">
@@ -37,7 +36,15 @@ function SideNav() {
 
                         <ul>
 
-                            <li class="list active">
+                            <li class="list active" onMouseEnter={
+                                () => {
+                                    let bubble = document.querySelector('#indicator');
+                                    let rightcorner = document.querySelector('#rightcorner');
+                                    let leftcorner = document.querySelector('#leftcorner');
+                                    bubble.style.transform = "translateX(-220px)"
+                                    rightcorner.style.transform = "translateX(-205px)"
+                                    leftcorner.style.transform = "translateX(-205px)"
+                                }}>
                                 <a href="https://www.proximus.be/support/fr/id_sfaqr_mypx_global/particuliers/support/myproximus/myproximus/site-web-myproximus/questions-frequentes-sur-myproximus.html">
                                     <span class="icon">
                                         <ion-icon name="help"></ion-icon>
@@ -46,7 +53,15 @@ function SideNav() {
                                 </a>
                             </li>
 
-                            <li class="list">
+                            <li class="list" onMouseEnter={
+                                () => {
+                                    let bubble = document.querySelector('#indicator');
+                                    let rightcorner = document.querySelector('#rightcorner');
+                                    let leftcorner = document.querySelector('#leftcorner');
+                                    bubble.style.transform = "translateX(-120px)"
+                                    rightcorner.style.transform = "translateX(-105px)"
+                                    leftcorner.style.transform = "translateX(-105px)"
+                                }}>
                                 <a href="https://fr.forum.proximus.be/">
                                     <span class="icon">
                                         <ion-icon name="contacts"></ion-icon>
@@ -55,7 +70,15 @@ function SideNav() {
                                 </a>
                             </li>
 
-                            <li class="list">
+                            <li class="list" onMouseEnter={
+                                () => {
+                                    let bubble = document.querySelector('#indicator');
+                                    let rightcorner = document.querySelector('#rightcorner');
+                                    let leftcorner = document.querySelector('#leftcorner');
+                                    bubble.style.transform = "translateX(-15px)"
+                                    rightcorner.style.transform = "translateX(0px)"
+                                    leftcorner.style.transform = "translateX(0px)"
+                                }}>
                                 <a href="https://www.proximus.be/fr/id_webshop/particuliers/r-orphans/webshop.html">
                                     <span class="icon">
                                         <ion-icon name="pricetag"></ion-icon>
@@ -64,17 +87,10 @@ function SideNav() {
                                 </a>
                             </li>
 
-                            {/* <li class="list">
-                                <a href="https://www.proximus.be/login/fr/?">
-                                    <span class="icon">
-                                        <ion-icon name="person"></ion-icon>
-                                    </span>
-                                    <span class="text">My Proximus</span>
-                                </a>
-                            </li> */}
-
-                            <div className="indicator col-4"></div>
-
+                            <div className="indicator" id="indicator">
+                            </div>
+                            <div className="indicator-right" id="rightcorner"></div>
+                            <div className="indicator-left" id="leftcorner"></div>
                         </ul>
                     </div>
 
