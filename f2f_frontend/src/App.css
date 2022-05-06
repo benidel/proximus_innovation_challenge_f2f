@@ -2,6 +2,7 @@ html,
 body,
 div,
 span {
+  font-family: 'Proximus-Regular';
   height: 100%;
   width: 100%;
   overflow: hidden;

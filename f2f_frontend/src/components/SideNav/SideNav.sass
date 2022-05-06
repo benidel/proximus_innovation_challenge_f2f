@@ -11,51 +11,134 @@
   padding: 2%
   margin: 0
   height: 95%
-  width: 90%
+  float: right
+  width: 70%
   z-index: 1
   position: relative
   border-radius: 30px
 
-.heading 
+.headings 
   display: flex
   text-align: center
   align-items: center
-  padding: 10px 16px 10px 15px
+  padding: 0
   margin: 0
-  height: 60px
+  height: 15%
   width: 100%
-  background-color: #fff
+  background-color: #eee
   z-index: 1000
 
-.searchBox 
-  padding: 0 !important
-  margin: 0 !important
-  height: 60px
-  width: 100%
+.usercard
+    height: 60%
+    background-color: #fff
+    border-radius: 10px
+    .user   
+        height: 50% 
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            border-radius: 50%
+    .profil
+        height: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        p
+            position: relative
+            top: -20px
+            color: #E2296D
+        .btn
+            position: relative
+            top: -20px
+            background-color: #5c2d91
+            width: 60%
+            height: 40px
+            color: white
 
-.searchBox-inner
-  height: 100%
-  width: 100%
-  padding: 10px !important
-  background-color: #fff
+.navigation
+    position: relative
+    height: 15%
+    padding-top: 200px
+    display: flex
+    justify-content: center
+    text-align: center
+    background-color: #fff
+    border-radius: 10px
+    overflow: visible
+    ul
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 350px
+        li
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: center
+            list-style: none
+            height: 70px
+            width: 70%
+            z-index: 1
+            &:nth-child(1)
+                &:hover
+                    transform: translateX(calc(70px * 0))
+            &:nth-child(2) .active .indicator
+                transform: translateX(calc(70px * 1))
+            &:nth-child(3) .active .indicator
+                transform: translateX(calc(70px * 2))
+            a 
+                position: relative
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                text-align: center
+                width: 100%
+                font-weight: 500
+                .icon
+                    top: -40px
+                    position: relative
+                    display: block
+                    line-height: 75px
+                    font-size: 2em
+                    text-align: center
+                    transition: 0.5s
+                    color: #DDD
+                    &:hover
+                        transform: translateY(-15px)
+                .text
+                    position: absolute
+                    top: 60%
+                    color: #000
+                    font-weight: 600
+                    font-size: 1em
+                    letter-spacing: 0.05em
+                    transition: 0.5s
+                    opacity: 1
+                    // transform: translateY(20px)
+        .indicator
+            position: absolute
+            top: -20px
+            width: 70px
+            height: 70px
+            background-color: #E2296D
+            border-radius: 50%
+            border: 8px solid #eee
+            transition: 0.5s
+            &:hover
+                transform: translateY(-15px)
+            &:before
+                content: ''
+                position: absolute
+                top: 50%
+                left: -20px
+                width: 20px
+                height: 20px
+                border-top-right-radius: 20px
+                background: transparent
 
-.sideBar
-  padding: 0 !important
-  margin: 0 !important
-  background-color: #fff
-  overflow-y: auto
-  border: 1px solid #f7f7f7
-  height: calc(100% - 120px)
-
-
-.sideBar-body 
-  position: relative
-  padding: 10px !important
-  border-bottom: 1px solid #f7f7f7
-  height: 72px
-  margin: 0 !important
-  cursor: pointer
-
-
-.sideBar-body:hover
-  background-color: #f2f2f2
+.copyright
+    opacity: 0.3
+    text-align: center
