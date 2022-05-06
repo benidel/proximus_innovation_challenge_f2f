@@ -58,7 +58,7 @@ function Message() {
     <div class="row message" id="conversation">
       <div class="row message-previous">
         <div class="col-sm-12 previous">
-          <a id="ankitjain28" name="20" href="plop">
+          <a href="plop">
             Show Previous Message!
           </a>
         </div>
