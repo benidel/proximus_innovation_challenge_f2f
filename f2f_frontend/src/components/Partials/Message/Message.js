@@ -23,32 +23,9 @@ function MessageItem({ isReceived, msg }) {
   );
 }
 
-function Message() {
-  const [messages, setMessages] = useState([]);
+function Message({messages}) {
 
-  useEffect(() => {
-    // get all messages and setMessages constant
-
-    // Here is a dummy messages array
-    setMessages([
-      {
-        isReceived: true,
-        msg: "Hello! What a pleasure to help you! What can I do for you?",
-      },
-      {
-        isReceived: false,
-        msg: "Hi! I would like to know why my wi-fi is not working anymore?",
-      },
-      {
-        isReceived: true,
-        msg: "Mmm...I guess It's due to Wheather conditions. Please wait an hour or two.",
-      },
-      {
-        isReceived: false,
-        msg: "Alright, I will wait until it returns to normal",
-      },
-    ]);
-  }, []);
+  console.log(messages);
   // --------------------------- VARIABLES ------------------------
 
   // --------------------------- FUNCTIONS ------------------------
